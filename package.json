@@ -1,6 +1,6 @@
 {
   "name": "geddy-ember-serializer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A module for converting Geddy's Model output into a sideloaded payloaded that Ember-Data prefers.",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/flyswatter/geddy-ember-serializer/issues"
   },
-  "homepage": "https://github.com/flyswatter/geddy-ember-serializer"
+  "homepage": "https://github.com/flyswatter/geddy-ember-serializer",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "utilities": "^1.0.4"
+  }
 }
