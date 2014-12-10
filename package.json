@@ -1,6 +1,6 @@
 {
   "name": "geddy-ember-serializer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for converting Geddy's Model output into a sideloaded payloaded that Ember-Data prefers.",
   "main": "index.js",
   "scripts": {
