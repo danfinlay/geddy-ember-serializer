@@ -38,6 +38,7 @@ Geddy has some great nested object retrieval, but Ember-Data requires slightly d
 
 
     /* With this module, we can structure the same data like this: */
+    serializer.init(); // Call between serializations to clear the store out.
     serizer.digest( user ); // Feed it as many models as you want, with relationships loaded!
     var result = serializer.serialize(); // Does the actual conversion on this function call:
     console.dir( result );
