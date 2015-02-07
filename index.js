@@ -91,7 +91,6 @@ function digest (model){
 };
 
 function serialize () {
-
   connectRelationships();
   var response = arrayize( store );
   response = uniqueIds( response );
@@ -411,9 +410,11 @@ function updateLatest( latest, model ){
       // If it's an array, it's a hasMany:
       if( Array.isArray( latest[key] )){
         // Add the members to the store:
-        model[key].forEach(function(obj){
-          addModelToStore( obj );
-        });
+        if( model[ key ] && Array.isArray( model[ key ])){
+          model[key].forEach(function(obj){
+            addModelToStore( obj );
+          });
+        }
 
         // Add their IDs to the latest object's array:
         if( model[key] ){
