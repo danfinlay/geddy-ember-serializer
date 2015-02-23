@@ -71,7 +71,7 @@ function init (model) {
 
 function digest (model){
 
-  if(!model){
+  if(model === undefined){
     throw new Error("Must provide the geddy registry and the model, not in that order!");
   }
 
